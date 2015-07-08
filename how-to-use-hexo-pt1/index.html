@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>How to start using Hexo to blog - part 1 | Slevin&#39;s blog</title>
+  <meta name="author" content="Slevin Zhang">
+  
+  <meta name="description" content="Blog for Slevin a.k.a Liyin Zhang, where he writes about what he&#39;s learned lately.">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="How to start using Hexo to blog - part 1"/>
+  <meta property="og:site_name" content="Slevin&#39;s blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/blog/favicon.png" rel="icon">
+  <link rel="alternate" href="/blog/atom.xml" title="Slevin&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/blog/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/blog/">Slevin&#39;s blog</a></h1>
+  <h2><a href="/blog/">Never stop learning.</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/blog/archives">Archives</a></li>
+    
+      <li><a href="http://www.slevin.im/#/">Slevin.im</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-07-08T12:58:39.000Z"><a href="/blog/how-to-use-hexo-pt1/">2015-07-08</a></time>
+      
+      
+  
+    <h1 class="title">How to start using Hexo to blog - part 1</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://hexo.io/" target="_blank" rel="external">Hexo</a> is a static site generator with the capability of generating blog posts. What that means is you no longer need a database and all the posts are stored in html format. Plus, you can write your posts in <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">markdown</a>, which is a modern way of writing blog posts <a href="http://blog.ghost.org/markdown/#whydowriterslovemarkdownsomuch" target="_blank" rel="external">advanced writers swear by</a>.</p>
+<p>If you want to learn more about markdown,  checkout the <a href="http://blog.ghost.org/markdown/" target="_blank" rel="external">Ultimate Guide to Markdown</a>.</p>
+<p>Back on topic: so how do you start using Hexo to blog?</p>
+<p>It’s as easy as taking the following 3 steps:</p>
+<h2 id="Installation">Installation</h2><p>It only takes one line of command to install it if you have <a href="https://nodejs.org" target="_blank" rel="external">Node.js</a> and <a href="http://git-scm.com" target="_blank" rel="external">Git</a> already. Which is: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>If you don’t have Node.js and Git install, checkout the more detailed <a href="https://hexo.io/docs/index.html#Install_Git" target="_blank" rel="external">instructions</a> from the official documentation.</p>
+<h2 id="Setup">Setup</h2><p>Once you have the Hexo command line installed in the previous step, you can run the following command to create a folder to store your future blog posts. So instead of writing your post in an online editor, with Hexo, you can write and store your posts in your own computer and push them online when they are ready.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>Replace <code>&lt;folder&gt;</code> with the name you want. I created mine as <code>myblog</code>.</p>
+<h2 id="Quick_Start">Quick Start</h2><p>With the folders and all the files within created, you can now quickly start making some new posts, with the following commands.</p>
+<h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h2 id="Conclusion">Conclusion</h2><p>So now you have learned to setup your blog posts using Hexo locally, but how do you publish them online? In the next part of this tutorial, I will show you how to set it up on GitHub, which serves as a free hosting platform for your blog. So stay tuned!</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/blog/categories/Tutorials/">Tutorials</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/blog/tags/Hexo/">Hexo</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Comments</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://www.slevin.im/blog/how-to-use-hexo-pt1/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:www.slevin.im/blog">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">Categories</h3>
+  <ul class="entry">
+  
+    <li><a href="/blog/categories/Tutorials/">Tutorials</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/blog/tags/Hexo/">Hexo</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 Slevin Zhang
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/blog/js/jquery.imagesloaded.min.js"></script>
+<script src="/blog/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
